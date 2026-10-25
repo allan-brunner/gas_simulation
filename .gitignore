@@ -1,0 +1,10 @@
+# Project export folder
+export/*
+
+# UV python
+__pycache__/*
+src/gas_simulation/__pycache__/*
+tests/__pycache__/*
+
+# Paraview state save file
+state.pvsm

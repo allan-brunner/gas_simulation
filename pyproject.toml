@@ -1,0 +1,21 @@
+[project]
+name = "gas-simulation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Allan Brunner", email = "allan@allanbrunner.dev" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "h5py>=3.16.0",
+    "numpy>=2.5.3",
+    "pytest>=9.1.1",
+]
+
+[project.scripts]
+gas-simulation = "gas_simulation:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
