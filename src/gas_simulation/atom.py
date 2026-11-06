@@ -66,7 +66,7 @@ class Atom:
     def transfer_speed(self, other: Atom):
         sum_mass = self.mass + other.mass
         delta_vij = self.speed - other.speed
-        delta_rij = self.speed - other.speed
+        delta_rij = self.spatial_pos - other.spatial_pos
 
         dist2 = float(np.dot(delta_rij, delta_rij))
         if dist2 == 0.0:
